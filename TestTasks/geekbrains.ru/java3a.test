@@ -217,7 +217,7 @@ PreparedStatement
 
 @Question
 В чем особенность SequenceInputStream?
-@Options @OnlyOne @Key=3
+@Options @OnlyOne @Key= не 3 предположительно 2
 позволяет зацикленно читать один и тот же файл
 позволяет работать с несколькими потоками ввода, как с одним
 позволяет выбрать направление чтения файла, от начала к концу, либо с конца в начало
@@ -237,3 +237,84 @@ JDBC URL содержит ошибку
 повторно записывает объекты в файл
 делает откат к ранее установленному состоянию
 сбрасывает информацию об уже записанных объектах в файл
+
+@Question
+В чем особенность RandomAccessFile?
+@Options @OnlyOne @Key=
+может открыть файл, даже занятый другим процессом
+
+
+@Question
+Назовите один из основных плюсов использования обобщений(Generics)?
+@Options @OnlyOne @Key=1
+обобщения позволяют писать более стабильный и общий код благодаря возможности обнаружения большего числа ошибок на этапе компиляции
+
+@Question
+Какая проверка отсутствует в классе Assert библиотеки JUnit 4?
+@Options @OnlyOne @Key=1
+assertReference
+
+@Question
+Какой класс не входит в пакет java.lang.reflect?
+@Options @OnlyOne @Key= предположительно Class
+Constructor
+Method
+Field
+Class
+
+@Question
+Сколько уровней логирования (включая OFF и ALL) есть в java.util.logging?
+@Options @OnlyOne @Key= ? жду
+8
+
+@Question
+Какой из классов пакета java.io предоставляет возможность выбора кодировки при чтении данных из потока?
+@Options @OnlyOne @Key=1
+InputStreamReader
+
+@Question
+К какому из представленных классов нельзя подключить Filter?
+@Options @OnlyOne @Key=
+Logger
+
+
+@Question
+Что не может быть обобщенным?
+@Options @OnlyOne @Key=1
+исключение
+
+@Question
+Что произойдет при попытке выполнить некорректно сформированный SQL запрос?
+@Options @OnlyOne @Key=1
+будет выброшено SQLException
+
+@Question
+Утверждение: Scanner предназначен только для чтения пользовательского ввода с консоли
+@Options @OnlyOne @Key=1
+не верно
+
+@Question
+Что произойдет при попытке повторного создания таблицы через запрос CREATE TABLE students (... если такая таблица уже существует?
+@Options @OnlyOne @Key=1
+будет брошено SQLException
+
+@Question
+Можно ли перехватить исключение, возникшие в одном из потоков ExecutorService, не в этом потоке сервиса?
+@Options @OnlyOne @Key=1
+да
+
+@Question
+Сколько объектов класса Handler можно подключить к Logger?
+@Options @OnlyOne @Key=
+не больше одного
+
+@Question
+Как можно запрашивать значения столбцов в ResultSet?
+@Options @OnlyOne @Key=
+только по имени столбца
+
+@Question
+Имеется переменная volatile int count=0; Будет ли инструкция count++ атомарной?
+@Options @OnlyOne @Key=
+да
+
